@@ -3,7 +3,7 @@ library(timevis)
 
 # Timeline data with URLs
 timeline_data <- data.frame(
-  id = 1:25,
+  id = 1:32,
   content = c("R was created by Ross Ihaka and Robert Gentleman",
               "R is released under the GNU licence",
               "Ross Ihaka and Robert Gentleman's paper 'R: A Language for Data Analysis and Graphics' is published",
@@ -28,12 +28,21 @@ timeline_data <- data.frame(
               "RStudio becomes a B Corp",
               "The first Shiny in Production conference is held in Newcastle-upon-Tyne, England",
               "RStudio announce the release of Quarto. RStudio becomes Posit",
-              "First public release of WebR package"),
+              "First public release of WebR package",
+              "Appsilon was founded",
+              "Rhino was created",
+              "Rhinoverse was launched",
+              "The first ShinyConf was held",
+              "Pharmaverse was founded",
+              "Rhinoverse package {shiny.semantic} was released",
+              "Rhinoverse package {shiny.router} was released"),
   start = as.Date(c("1993-01-01", "1995-01-01", "1996-01-01", "1997-01-01", "2000-02-29",
                     "2001-01-01", "2003-01-01", "2004-01-01", "2004-01-01", "2004-01-01",
                     "2007-01-01", "2009-01-01", "2011-01-01", "2012-01-01", "2013-01-01",
                     "2014-01-01", "2015-01-01", "2016-01-01", "2017-01-01", "2018-01-01",
-                    "2020-01-01", "2020-01-01", "2022-01-01", "2022-01-01", "2023-01-01")),
+                    "2020-01-01", "2020-01-01", "2022-01-01", "2022-01-01", "2023-01-01",
+                    "2013-01-01", "2021-01-01", "2022-01-01", "2021-01-01", "2021-01-01",
+                    "2021-07-01", "2021-10-01")),
   url = c("https://en.wikipedia.org/wiki/R_(programming_language)",
           "https://www.gnu.org/licenses/gpl-3.0.html",
           "https://www.tandfonline.com/doi/abs/10.1080/10618600.1996.10474713",
@@ -58,7 +67,14 @@ timeline_data <- data.frame(
           "https://bcorporation.net/directory/rstudio",
           "https://shiny-in-production.org/",
           "https://quarto.org/",
-          "https://github.com/r-wasm/webr")
+          "https://github.com/r-wasm/webr",
+          "https://appsilon.com/",
+          "https://appsilon.com/rhino/",
+          "https://appsilon.com/rhino/",
+          "https://appsilon.com/shinyconf/",
+          "https://pharmaverse.org/",
+          "https://github.com/Appsilon/shiny.semantic",
+          "https://appsilon.github.io/shiny.router/")
 )
 
 # Ensure data is sorted by the start date
